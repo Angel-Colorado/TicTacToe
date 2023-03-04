@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="TicTacToe.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TicTacToe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light">
+
+    <Grid RequestedTheme="Default">
+        <Button x:Name="btn00" Content="?" Height="100" Margin="80,160,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="1" Click="Cell_Click" Background="#FF0077BE"/>
+        <TextBlock x:Name="lblTitle" HorizontalAlignment="Left" Margin="0,40,0,0" Text="Let's Play Tic Tac Toe!!" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="28" FontWeight="Bold" Foreground="#FF0077BE" Width="500"/>
+        <Button x:Name="btn01" Content="?" Height="100" Margin="200,160,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="2" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn02" Content="?" Height="100" Margin="320,160,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="3" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn03" Content="?" Height="100" Margin="80,280,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="4" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn04" Content="?" Height="100" Margin="200,280,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="5" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn05" Content="?" Height="100" Margin="320,280,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="6" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn06" Content="?" Height="100" Margin="80,400,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="7" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn07" Content="?" Height="100" Margin="200,400,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="8" Click="Cell_Click" Background="#FF0077BE"/>
+        <Button x:Name="btn08" Content="?" Height="100" Margin="320,400,0,0" VerticalAlignment="Top" Width="100" RequestedTheme="Default" FontSize="64" TabIndex="9" Click="Cell_Click" Background="#FF0077BE"/>
+        <TextBlock x:Name="txtStatus" HorizontalAlignment="Left" Margin="0,515,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="22" FontWeight="Bold" Foreground="#FF27DB17" Width="500" Text=". . ."/>
+        <Button x:Name="btnReset" Content="Reset Game" Height="60" Margin="80,560,0,0" VerticalAlignment="Top" Width="340" RequestedTheme="Default" FontSize="24" TabIndex="10" Background="#FFFF7501" Click="Reset_Click"/>
+        <TextBlock x:Name="txtXWins" HorizontalAlignment="Left" Margin="40,640,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="16" FontWeight="Normal" Foreground="#FF0077BE" Width="160" Text="Player 'X' Wins: 0" HorizontalTextAlignment="Left"/>
+        <TextBlock x:Name="txtScratch" HorizontalAlignment="Left" Margin="0,640,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="16" FontWeight="Normal" Foreground="#FF0077BE" Width="500" Text="Scratch Games: 0" HorizontalTextAlignment="Center"/>
+        <TextBlock x:Name="txtOWins" HorizontalAlignment="Left" Margin="300,640,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Center" FontSize="16" FontWeight="Normal" Foreground="#FF0077BE" Width="160" Text="Player 'O' Wins: 0" HorizontalTextAlignment="Right"/>
+        <CheckBox x:Name="chkAI" Content="Play against the unbeatable AI" Margin="120,100,0,0" VerticalAlignment="Top" Width="280" FontSize="16" TabIndex="11" IsChecked="True"/>
+    </Grid>
+</Page>
